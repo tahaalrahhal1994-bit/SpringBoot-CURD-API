@@ -20,9 +20,10 @@ public class ProductConfig {
             return args -> {
                 Product one = new Product("Taha", 10, 10);
                 Product two = new Product("Motasem", 4,2);
-
+                Product three = new Product("Ahmad", 15, 20);
+                Product four = new Product("Wesal", 12, 18);
                 repository.saveAll(
-                        List.of(one, two)
+                        List.of(one, two, three, four)
                 );
             };
         }
